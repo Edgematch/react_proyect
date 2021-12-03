@@ -84,7 +84,7 @@ const TransferForm = () => {
               <Col md={6} xl={3}>
               <Form.Group>
                 <Form.Label>Amount</Form.Label>
-                <Form.Control type={'number'} ref={amountRef}></Form.Control>
+                <Form.Control type={'number'} step="0.01" ref={amountRef}></Form.Control>
               </Form.Group>{' '}
               </Col>
           </Row>

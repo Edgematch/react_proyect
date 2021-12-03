@@ -12,7 +12,7 @@ const Account = ({ account }) => {
   const dark = useSelector(selectDarkmodeState);
   const theme =
     'd-flex justify-content-between align-items-start mb-2 border-3 bg-transparent';
-  const { id, description, account_type, currency, amount, add_date } = account;
+  const { id, description, account_type, currency, amount, add_date} = account;
 
   const onClickHandler =()=>{
     dispatch(deleteAccount(id))
@@ -38,6 +38,7 @@ const Account = ({ account }) => {
           <span className="fw-bold text-info">{currency}</span>{' '}
           {parseFloat(amount).toFixed(2)} - {' '}
           <span className="fw-bold text-info text-right">Created: </span> {add_date}
+          
         </div>
         <CloseButton  className={dark? "btn-close-white": "btn-close-black"} onClick={onClickHandler}/>
       </ListGroup.Item>

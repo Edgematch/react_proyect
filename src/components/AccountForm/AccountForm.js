@@ -131,7 +131,7 @@ const AccountForm = () => {
           <Col>
             <Form.Group className={'m-3'}>
               <Form.Label>Amount</Form.Label>
-              <Form.Control type={'number'} ref={amount}></Form.Control>
+              <Form.Control type={'number'} step="0.01" ref={amount}></Form.Control>
             </Form.Group>
           </Col>
         </Row>
